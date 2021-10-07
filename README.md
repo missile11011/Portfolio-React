@@ -59,4 +59,4 @@ Portfolio Link: [https://missile11011.github.io/portfolio/](https://missile11011
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: /assets/images/screenshot.png
+[product-screenshot]: /public/assets/images/screenshot.png
