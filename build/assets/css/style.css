@@ -1,0 +1,37 @@
+/* * {
+    border: 1px solid red; 
+} */
+.nav-gradient {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,255,255,0.5) 100%);
+}
+#portrait {
+    max-width: 50%;
+}
+li {
+    list-style-type: none;
+}
+#hero1 {
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation1 {
+    0%   {color:white}
+    40% {color:white}
+    50% {color: transparent;}
+    100% {color:transparent}
+}
+#hero2 {
+    animation-name: animation2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animation2 {
+    0%   {color:transparent}
+    50%   {color:transparent}
+    60% {color: white;}
+    100% {color:white;}
+}
