@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.line-1, .line-2 {
+  border-right: solid 3px rgba(0,255,0,.0);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+}
+
+.center-heroku {
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+}
+
+.hidden {
+  color: transparent;
+}
+.text-reveal:hover {
+  display: block;
+  color: black;
+  background-color: white;
+  opacity: 50;
+}
+
+.line-1 {
+  animation: animated-text-1 4.6s steps(23,end) 1s 1 normal both,
+            animated-cursor-1 1000ms steps(15,end) 6;
+}
+.line-2 {
+  animation: animated-text-2 4s steps(20,end) 5.6s 1 normal both,
+            animated-cursor-2 900ms steps(17,end) 5.6s infinite ;
+}
+
+/* text animation */
+
+@keyframes animated-text-1{
+  from{width: 0;}
+  to{width: 350px;}
+}
+
+@keyframes animated-text-2{
+  from{width: 0;}
+  to{width: 300px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor-1{
+  from{border-right-color: rgba(252, 252, 252, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+@keyframes animated-cursor-2{
+  from{border-right-color: rgba(252, 252, 252, 0.75);}
+  to{border-right-color: transparent;}
+}
+
