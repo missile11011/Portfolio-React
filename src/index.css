@@ -29,7 +29,7 @@ code {
 }
 
 .hidden {
-  color: transparent;
+  display: none;
 }
 .text-reveal:hover {
   display: block;

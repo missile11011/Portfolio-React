@@ -12,7 +12,6 @@ function App() {
     <Header></Header>
     <About></About>
     <GridImage></GridImage>
-    <Portfolio></Portfolio>
     <Contact></Contact>
     <Footer></Footer>
     <script src="./assets/lib/js/bootstrap.bundle.min.js"></script>
