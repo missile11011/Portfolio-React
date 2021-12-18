@@ -4,7 +4,7 @@ import "../index.css";
 function About() {
 	return (
 		<>
-			<img
+			<Image
 				class="img-fluid w-100 vh-100"
 				src={process.env.PUBLIC_URL + '/images/AdobeStock_190318318.jpeg' } 
 				alt="gradeint background"
@@ -18,12 +18,11 @@ function About() {
 					I'm a Web Developer
 				</h1>
 			</div>
-
 			<article
 				id="About-me"
 				class=" flex-wrap row align-items-center justify-content-center container-fluid"
 			>
-				<img
+				<Image
 					id="portrait"
 					class="rounded-circle col-md-3 py-3"
 					src="https://clinicforspecialchildren.org/wp-content/uploads/2016/08/avatar-placeholder.gif"

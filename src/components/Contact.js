@@ -5,7 +5,7 @@ function Contact(){
     <section id="Contact" class="container-fluid">
         <div class=" text-center">
             <h2 class="text-center my-5">My Resume</h2>
-        <a class="btn btn-primary btn-lg px-5 text-white" href={process.env.PUBLIC_URL + '/GeneralResume.PDF'}>Resume PDF</a>
+        <a class="btn btn-primary btn-lg px-5 text-white" href={process.env.PUBLIC_URL + '/GeneralResume.pdf'}>Resume PDF</a>
         </div>
         
         <h2 class="text-center my-5">

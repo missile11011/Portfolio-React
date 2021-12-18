@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import {Container, Row, Col, Image} from "react-bootstrap";
 
 const mouseOverHandler = (e) => {
@@ -22,7 +22,7 @@ const GridImage = () => {
         <h4 class="w-100 text-center navbar p-3 bg-dark text-white">My Projects</h4>
         <Row class="">
             <Col lg={4} md={6} sm={12} className="p-0   card" >
-                <Image className="img-fluid card-img"  onMouseOver={mouseOverHandler} src={process.env.PUBLIC_URL + '/images/WeatherDash.PNG'} />
+                <Image className="img-fluid card-img"  onMouseOver={mouseOverHandler} src={process.env.PUBLIC_URL + '/images/WeatherDash.png'} />
                 <div class="hidden " onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text">Weather Dashboard</h5>
                     <p class="card-text">Weather dashboard web application that displays current forecast and daily forecast.</p>
@@ -31,7 +31,7 @@ const GridImage = () => {
                 </div>
             </Col>
             <Col lg={4} md={6} sm={12} className="p-0  card">
-                <Image onMouseOver={mouseOverHandler}  className="img-fluid card-img" src= {process.env.PUBLIC_URL + '/images/ReduxStore.png'} />
+                <Image onMouseOver={mouseOverHandler}  className="img-fluid card-img" src= {process.env.PUBLIC_URL + '/images/ReduxStore.PNG'} />
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text p-1">Redux Shop</h5>
                     <p class="card-text p-1">An e-commerce site using react and redux.</p>
@@ -40,7 +40,7 @@ const GridImage = () => {
                 </div>
             </Col>
             <Col lg={4} md={6} sm={12} className="p-0  card">
-                <Image className="img-fluid card-img" onMouseOver={mouseOverHandler} src= {process.env.PUBLIC_URL + '/images/Booksearch.png'} />
+                <Image className="img-fluid card-img" onMouseOver={mouseOverHandler} src= {process.env.PUBLIC_URL + '/images/Booksearch.PNG'} />
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text p-1">Book Search</h5>
                     <p class="card-text p-1">Searchs for books and save them for later.</p>
