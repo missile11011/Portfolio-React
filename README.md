@@ -40,7 +40,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Misael Reyes - misaelrey90@gmail.com
 
-Portfolio Link: [https://missile11011.github.io/portfolio/](https://missile11011.github.io/portfolio/)
+Portfolio Link: [https://vast-plateau-85026.herokuapp.com/](https://vast-plateau-85026.herokuapp.com/)
 
 
 
@@ -59,4 +59,4 @@ Portfolio Link: [https://missile11011.github.io/portfolio/](https://missile11011
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: /public/assets/images/screenshot.png
+[product-screenshot]: /public/images/screenshot.png
