@@ -19,7 +19,7 @@ const GridImage = () => {
 
     return(
     <Container fluid>
-        <h4 class="w-100 text-center navbar p-3 bg-dark text-white">My Projects</h4>
+        <h4 class="text-center p-3 bg-dark text-white align-items-center navbar-text ">My Projects</h4>
         <Row class="">
             <Col lg={4} md={6} sm={12} className="p-0   card" >
                 <Image className="img-fluid card-img"  onMouseOver={mouseOverHandler} src={process.env.PUBLIC_URL + '/images/WeatherDash.png'} />

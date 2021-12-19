@@ -27,6 +27,11 @@ function Contact(){
                 <a class="text-decoration-none text-black"
                     href="https://github.com/missile11011/portfolio">github.com/missile11011</a>
             </li>
+            <li class="col text-center">
+                <h4>LinkedIn</h4>
+                <a class="text-decoration-none text-black"
+                    href="https://linkedin.com/in/misael-reyes-aba129191">linkedin.com</a>
+            </li>
         </ul>
     </section>
     )
