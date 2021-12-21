@@ -1,22 +1,42 @@
 import React from "react";
-import {Container, Row, Col, Image} from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 const mouseOverHandler = (e) => {
-    const card = e.target.parentElement.lastElementChild;
-    card.className="card-img-overlay bg-light text-center"
-    for (let i = 0; i < card.childNodes.length; i++) {
-        card.childNodes[i].className="card-text p-1"
-    }
-}
-const mouseOutHandler = (e) =>{
-    const card = e.target
-    if (card.element="div"){
-        card.className="hidden"
-    }
-}
+	const card = e.target.parentElement.lastElementChild;
+	card.className = "card-img-overlay bg-light text-center";
+	for (let i = 0; i < card.childNodes.length; i++) {
+		card.childNodes[i].className = "card-text p-1";
+	}
+};
+const mouseOutHandler = (e) => {
+	const card = e.target;
+	if ((card.element = "div")) {
+		card.className = "hidden";
+	}
+};
 const GridImage = () => {
-
-
+    const [isMobile, setIsMobile] = useState(false);
+	useEffect(() => {
+        const mobileSupport=()=>{
+            if (window.innerWidth < 500) {
+                setIsMobile(true);
+                const target = window.document.querySelectorAll("div.card");
+                for (let i = 0; i < target.length; i++) {
+                    target[i].lastChild.className = "bg-dark text-center bg-opacity-25";
+                    
+                }
+            }
+            else{
+                const target = window.document.querySelectorAll("div.card");
+                for (let i = 0; i < target.length; i++) {
+                    target[i].lastChild.className = "hidden";
+                    
+                }
+            }
+        };
+        window.addEventListener("resize", mobileSupport);
+	}, [isMobile]);
     return(
     <Container fluid>
         <h4 class="text-center p-3 bg-dark text-white align-items-center navbar-text ">My Projects</h4>
