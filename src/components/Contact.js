@@ -13,23 +13,23 @@ function Contact(){
         </h2>
         <ul class="row mb-5 list-unstyled">
             <li class='col text-center '>
-                <h4>Phone Number</h4>
+                <h4>Phone</h4>
                 <p>(972)946-5331</p>
             </li>
             <li class='col text-center'>
                 <h4>Email</h4>
-                <a class="text-decoration-none text-black"
+                <a class="btn-primary btn"
                     href="mailto:misaelrey90@gmail.com">misaelrey90@gmail.com</a>
 
             </li>
             <li class="col text-center">
                 <h4>Github</h4>
-                <a class="text-decoration-none text-black"
+                <a class="btn-primary btn"
                     href="https://github.com/missile11011/portfolio">github.com/missile11011</a>
             </li>
             <li class="col text-center">
                 <h4>LinkedIn</h4>
-                <a class="text-decoration-none text-black"
+                <a class="btn-primary btn"
                     href="https://linkedin.com/in/misael-reyes-aba129191">linkedin.com</a>
             </li>
         </ul>
