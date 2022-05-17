@@ -14,7 +14,7 @@ function Contact(){
         <ul class="row mb-5 list-unstyled">
             <li class='col text-center '>
                 <h4>Phone</h4>
-                <p>(972)946-5331</p>
+                <p>(469)428-4698</p>
             </li>
             <li class='col text-center'>
                 <h4>Email</h4>

@@ -78,14 +78,14 @@ const GridImage = () => {
                 </div>
             </Col>
             <Col lg={4} md={6} sm={12} className="p-0 card">
-                <Image className="img-fluid card-img" onMouseOver={mouseOverHandler} src= {process.env.PUBLIC_URL + '/images/Password.png'} />
+                <Image className="img-fluid card-img" onMouseOver={mouseOverHandler} src= {process.env.PUBLIC_URL + '/images/DemoStore.png'} />
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text p-1">Password Generator</h5>
-                    <p class="card-text p-1">This application creates a random password with certain parameters.</p>
-                    <a class="btn btn-primary m-1" href="https://github.com/missile11011/PasswordGenerator" target="_blank">GitHub</a>
-                    <a class="btn btn-primary m-1" href="https://missile11011.github.io/PasswordGenerator/" target="_blank">Project</a>
+                    <p class="card-text p-1">This web application is a modern e-commerce store</p>
+                    <a class="btn btn-primary m-1" href="https://github.com/missile11011/E-commerce_Demo" target="_blank">GitHub</a>
+                    <a class="btn btn-primary m-1" href="https://demo-store-23394.herokuapp.com/" target="_blank">Project</a>
                 </div>
-            </Col>                      
+			</Col>  
             <Col lg={4} md={6} sm={12} className="p-0 card">
                 <Image className="img-fluid card-img" onMouseOver={mouseOverHandler} src= {process.env.PUBLIC_URL + '/images/Budget.png'} />
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
@@ -99,7 +99,7 @@ const GridImage = () => {
                 <Image className="img-fluid card-img" onMouseOver={mouseOverHandler} src= {process.env.PUBLIC_URL + '/images/Password.png'} />
                 <div className="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 className="card-text p-1">Password Generator</h5>
-                    <p className="card-text">This web application generates a password for you. It creates a random password with certain parameters.</p>
+                    <p className="card-text">This application creates a random password with certain parameters.</p>
                     <a className="btn btn-primary m-1" href="https://github.com/missile11011/PasswordGenerator" target="_blank">GitHub</a>
                     <a className="btn btn-primary m-1" href="https://missile11011.github.io/PasswordGenerator/" target="_blank">Project</a>
                 </div>

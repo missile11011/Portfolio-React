@@ -5,11 +5,7 @@ import {Canvas, useFrame, extend} from "@react-three/fiber";
 import {TextGeometry} from "three/examples/jsm/geometries/TextGeometry";
 import {FontLoader} from "three/examples/jsm/loaders/FontLoader";
 import iosevka from "../assets/fonts/Iosevka.json";
-import {
-	MeshWobbleMaterial,
-	Bounds,
-	OrbitControls,
-} from "@react-three/drei";
+import {MeshWobbleMaterial, Bounds, OrbitControls} from "@react-three/drei";
 
 function Box() {
 	useFrame(({clock}) => {
@@ -87,7 +83,6 @@ function Dodecahedron() {
 function About() {
 	useEffect(() => {
 		extend({TextGeometry, FontLoader});
-		
 	}, []);
 	const font = new FontLoader().parse(iosevka);
 
@@ -179,12 +174,10 @@ function About() {
 				<div className="col-8">
 					<h2 className="text-center inline-flex">About Me</h2>
 					<p>
-						Hello my name is Misael Reyes and I’m a self taught
+						Hello my name is Misael Reyes and I'm based in Dallas Tx. I'm a self taught
 						software developer and web developer for a year. Then I
-						got my certificate for coding at SMU. Reasons why you
-						should choose me I'm responsive, bilingual, and flexible
-						to an extant. When you have a question or change I would
-						happily response within the hour.
+						got my certificate for coding at SMU in late 2021. I'm currently
+						looking for part-time, full-time, or freelance work.
 					</p>
 				</div>
 			</article>
