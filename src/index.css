@@ -70,4 +70,12 @@ code {
   from{border-right-color: rgba(252, 252, 252, 0.75);}
   to{border-right-color: transparent;}
 }
+.scroll-btn {
+  visibility: hidden;
+}
 
+@media (max-width: 991px){
+  .scroll-btn {
+    visibility: visible;
+  }
+}

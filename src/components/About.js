@@ -159,6 +159,13 @@ function About() {
 						</mesh>
 					</Bounds>
 				</Canvas>
+				<a href="#About-me">
+					<button class="btn btn-sm btn-outline-light text-light scroll-btn px-auto position-absolute
+						start-50 bottom-0 translate-middle" href="#About-me">
+						<p>scroll</p>
+						<i class="bi bi-arrow-down-circle"></i>
+					</button>
+				</a>
 			</div>
 
 			<article
