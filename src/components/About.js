@@ -160,8 +160,11 @@ function About() {
 					</Bounds>
 				</Canvas>
 				<a href="#About-me">
-					<button class="btn btn-sm btn-outline-light text-light scroll-btn px-auto position-absolute
-						start-50 bottom-0 translate-middle" href="#About-me">
+					<button
+						class="btn btn-sm btn-outline-light text-light scroll-btn px-auto position-absolute
+						start-50 bottom-0 translate-middle"
+						href="#About-me"
+					>
 						<p>scroll</p>
 						<i class="bi bi-arrow-down-circle"></i>
 					</button>
@@ -170,7 +173,7 @@ function About() {
 
 			<article
 				id="About-me"
-				className=" flex-wrap row align-items-center justify-content-center container-fluid"
+				className="light-color flex-wrap row align-items-center justify-content-center "
 			>
 				<img
 					id="portrait"
@@ -181,13 +184,128 @@ function About() {
 				<div className="col-8">
 					<h2 className="text-center inline-flex">About Me</h2>
 					<p>
-						Hello my name is Misael Reyes and I'm based in Dallas Tx. I'm a self taught
-						software developer and web developer for a year. Then I
-						got my certificate for coding at SMU in late 2021. I'm currently
-						looking for part-time, full-time, or freelance work.
+						Hello my name is Misael Reyes and I'm based in Dallas
+						Tx. I'm a self taught software developer and web
+						developer for a year. Then I got my certificate for
+						coding at SMU in late 2021. I'm currently looking for
+						part-time, full-time, or freelance work.
 					</p>
 				</div>
 			</article>
+			<div className="container">
+				<div className="text-center">
+					<h2 className="text-center my-4">Skills</h2>
+				</div>
+				
+				<div className="row row-cols-md-5 row-cols-2 py-3 ">
+					<div className="col flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/html5-logo.png"
+							}
+						/>
+						<p className="mx-auto">HTML5</p>
+					</div>
+
+					<div className="col flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL + "/images/css3-logo.png"
+							}
+						/>
+						<p className="mx-auto">CSS3</p>
+					</div>
+
+					<div className="col flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL + "/images/node-logo.png"
+							}
+						/>
+						<p className="mx-auto">Node</p>
+					</div>
+
+					<div className="col flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/python-logo.png"
+							}
+						/>
+						<p className="text-center">Python</p>
+					</div>
+
+					<div className="col  flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/javascript-logo.png"
+							}
+						/>
+						<p className="text-center">JavaScript</p>
+					</div>
+					<div className="col  flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/react-logo.png"
+							}
+						/>
+						<p className="text-center">React</p>
+					</div>
+
+					<div className="col  flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/mongodb-logo.png"
+							}
+						/>
+						<p className="text-center">MongoDB</p>
+					</div>
+
+					<div className="col flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/mysql-logo.png"
+							}
+						/>
+						<p className="mt-auto mx-auto">MySQL</p>
+					</div>
+
+					<div className="col  flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/GraphQL-logo.png"
+							}
+						/>
+						<p className="mx-auto">GraphQL</p>
+					</div>
+					<div className="col flex-column d-flex">
+						<img
+							className="img-fluid my-auto"
+							src={
+								process.env.PUBLIC_URL +
+								"/images/docker-logo.png"
+							}
+						/>
+						<p className="mx-auto">Docker</p>
+					</div>
+				</div>
+				<div className="row py-3"></div>
+			</div>
 		</>
 	);
 }

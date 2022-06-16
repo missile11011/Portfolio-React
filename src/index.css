@@ -79,3 +79,13 @@ code {
     visibility: visible;
   }
 }
+
+.primary-color {
+  background-color: #FCA311;
+}
+.light-color {
+  background-color: #E5E5E5;
+}
+.dark-color {
+  background-color: #14213D;
+}
