@@ -24,3 +24,6 @@ yarn-error.log*
 
 .gitignore
 README.md
+
+.dockerignore
+Dockerfile

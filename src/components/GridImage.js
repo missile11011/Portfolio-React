@@ -13,7 +13,7 @@ const GridImage = () => {
                 console.log(isMobile)
                 const target = window.document.querySelectorAll("div.card");
                 for (let i = 0; i < target.length; i++) {
-                    target[i].lastChild.className = "bg-dark text-center text-white bg-opacity-75 card-body";
+                    target[i].lastChild.className = "text-center card-body";
                 }
             }
             else{
@@ -32,12 +32,16 @@ const GridImage = () => {
         const card = e.target.parentElement.lastElementChild;
         
         if (isMobile == false){
-            card.className = "card-img-overlay bg-light text-center";
-                card.childNodes[0].className = "card-text p-1";
-                card.childNodes[1].className = "card-text p-1";
-                card.childNodes[2].className = "btn btn-primary m-1";
-                card.childNodes[3].className = "btn btn-primary m-1";
+            card.className = "card-img-overlay light-color text-center";
+                // card.childNodes[0].className = "card-text p-1";
+                // card.childNodes[1].className = "card-text p-1";
+                // card.childNodes[2].className = "btn primary-color m-1";
+                // card.childNodes[3].className = "btn rounded-pill primary-color m-1";
             
+        }
+        else{
+            // e.className=""
+            console.log(e.target.className)
         }
     };
     const mouseOutHandler = (e) => {
@@ -48,15 +52,17 @@ const GridImage = () => {
     };
     return(
     <Container fluid>
-        <h4 class="text-center p-3 bg-dark text-white align-items-center navbar-text ">My Projects</h4>
+        <Row>
+            <h4 class="text-center p-3 dark-color text-white align-items-center navbar-text ">My Projects</h4>
+        </Row>
         <Row class="">
             <Col lg={4} md={6} sm={12} className="p-0 card" >
                 <Image className="img-fluid card-img"  onMouseOver={mouseOverHandler} src={process.env.PUBLIC_URL + '/images/WeatherDash.png'} />
-                <div class="bg-dark text-center bg-opacity-25 card-body" onMouseLeave={mouseOutHandler} >
+                <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text">Weather Dashboard</h5>
                     <p class="card-text">Weather dashboard web application that displays current forecast and daily forecast.</p>
-                    <a class="btn btn-primary m-1" href="https://github.com/missile11011/WeatherDash" target="_blank">GitHub</a>
-                    <a class="btn btn-primary m-1" href="https://missile11011.github.io/WeatherDash/" target="_blank">Project</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://github.com/missile11011/WeatherDash" target="_blank">GitHub</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://missile11011.github.io/WeatherDash/" target="_blank">Project</a>
                 </div>
             </Col>
             <Col lg={4} md={6} sm={12} className="p-0  card">
@@ -64,8 +70,8 @@ const GridImage = () => {
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text p-1">Redux Shop</h5>
                     <p class="card-text p-1">An e-commerce site using react and redux.</p>
-                    <a class="btn btn-primary m-1" href="https://github.com/missile11011/ReduxStore" target="_blank">GitHub</a>
-                    <a class="btn btn-primary m-1" href="https://redux-shop-51615.herokuapp.com/" target="_blank">Project</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://github.com/missile11011/ReduxStore" target="_blank">GitHub</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://redux-shop-51615.herokuapp.com/" target="_blank">Project</a>
                 </div>
             </Col>
             <Col lg={4} md={6} sm={12} className="p-0  card">
@@ -73,8 +79,8 @@ const GridImage = () => {
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text p-1">Book Search</h5>
                     <p class="card-text p-1">Searchs for books and save them for later.</p>
-                    <a class="btn btn-primary m-1" href="https://github.com/missile11011/book_search" target="_blank">GitHub</a>
-                    <a class="btn btn-primary m-1" href="https://book-search-25563.herokuapp.com/" target="_blank">Project</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://github.com/missile11011/book_search" target="_blank">GitHub</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://book-search-25563.herokuapp.com/" target="_blank">Project</a>
                 </div>
             </Col>
             <Col lg={4} md={6} sm={12} className="p-0 card">
@@ -82,8 +88,8 @@ const GridImage = () => {
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text p-1">Password Generator</h5>
                     <p class="card-text p-1">This web application is a modern e-commerce store</p>
-                    <a class="btn btn-primary m-1" href="https://github.com/missile11011/E-commerce_Demo" target="_blank">GitHub</a>
-                    <a class="btn btn-primary m-1" href="https://demo-store-23394.herokuapp.com/" target="_blank">Project</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://github.com/missile11011/E-commerce_Demo" target="_blank">GitHub</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://demo-store-23394.herokuapp.com/" target="_blank">Project</a>
                 </div>
 			</Col>  
             <Col lg={4} md={6} sm={12} className="p-0 card">
@@ -91,8 +97,8 @@ const GridImage = () => {
                 <div class="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 class="card-text p-1">Budget Tracker</h5>
                     <p class="card-text">This tracks your budget, and helps helps you keep track of your spending habits.</p>
-                    <a class="btn btn-primary m-1" href="https://github.com/missile11011/BudgetTracker" target="_blank">GitHub</a>
-                    <a class="btn btn-primary m-1" href="https://budget-84554.herokuapp.com/" target="_blank">Project</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://github.com/missile11011/BudgetTracker" target="_blank">GitHub</a>
+                    <a class="btn rounded-pill primary-color m-1" href="https://budget-84554.herokuapp.com/" target="_blank">Project</a>
                 </div>
             </Col>
             <Col lg={4} md={6} sm={12} className="p-0 card">
@@ -100,8 +106,8 @@ const GridImage = () => {
                 <div className="hidden" onMouseLeave={mouseOutHandler} >
                     <h5 className="card-text p-1">Password Generator</h5>
                     <p className="card-text">This application creates a random password with certain parameters.</p>
-                    <a className="btn btn-primary m-1" href="https://github.com/missile11011/PasswordGenerator" target="_blank">GitHub</a>
-                    <a className="btn btn-primary m-1" href="https://missile11011.github.io/PasswordGenerator/" target="_blank">Project</a>
+                    <a className="btn rounded-pill primary-color m-1" href="https://github.com/missile11011/PasswordGenerator" target="_blank">GitHub</a>
+                    <a className="btn rounded-pill primary-color m-1" href="https://missile11011.github.io/PasswordGenerator/" target="_blank">Project</a>
                 </div>
             </Col>
         </Row>
